@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title> To Do List </title>
+		<link rel="stylesheet" href="stylesheets/whitespace-reset.css">
+		<link rel="stylesheet" href="stylesheets/main.css">
+	</head>
+	<body>
+		<label for="hamburger">
+			&#9776;
+		</label>
+		<input type="checkbox" name="hamburger" id="hamburger">
+		<nav>
+			<h1 class="all-todos"> All Todos <span class="number">18</span></h1>
+			<ul class="incomplete-tasks">
+				<li class="selected">02/16 <span class="number">8</span></li>
+				<li>03/16 <span class="number">2</span></li>
+				<li>04/16 <span class="number">1</span></li>
+				<li>05/16 <span class="number">1</span></li>
+				<li>06/16 <span class="number">6</span></li>
+			</ul>
+			<h1 class="completed"> Completed </h1>
+			<ul class="completed-tasks">
+				<li>02/15</li>
+				<li>03/15</li>
+				<li>04/15</li>
+				<li>05/15</li>
+				<li>06/15</li>
+			</ul>
+		</nav>
+		<main>
+			<h2> 02/16 <span class="number">8</span></h2>
+			<h3><span class="plus-symbol">+</span> Add new to do</h3>
+			<ul class="task-list">
+				<li class="unchecked">Item 1 </li>
+				<li class="unchecked">Item 2 </li>
+				<li class="checked">Item 3 </li>
+				<li class="checked">Item 4 </li>
+				<li class="checked">Item 5 </li>
+				<li class="unchecked">Item 6 </li>
+				<li class="unchecked">Item 7 </li>
+				<li class="unchecked">Item 8 </li>
+				<li class="unchecked">Item 9 </li>
+			</ul>
+			<div class="overlay">
+			</div>
+			<div class="details">
+				<form>
+					<fieldset>
+						<dl>
+							<dt>
+								<label for="title">Title</label>
+							</dt><!--
+							--><dd>
+								<input type="text" name="title" id="title" value="Item 2">
+							</dd>
+							<dt>
+								<label for="date">Due Date</label>
+							</dt><!--
+							--><dd class="third">
+								<select name="Day">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16" selected>16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+								</select>
+								<span class="arrow"></span>
+							</dd><!--
+							--><dd class="third">
+								<select name="Month">
+									<option value="" disabled selected>Month</option>
+									<option value="January">January</option>
+									<option value="Febuary">Febuary</option>
+									<option value="March">March</option>
+									<option value="April">April</option>
+									<option value="May">May</option>
+									<option value="June">June</option>
+									<option value="July">July</option>
+									<option value="August">August</option>
+									<option value="September">September</option>
+									<option value="October">October</option>
+									<option value="November">November</option>
+									<option value="December">December</option>
+								</select>
+								<span class="arrow"></span>
+							</dd><!--
+							--><dd class="third no-padding">
+								<select name="Year">
+									<option value="" disabled selected>Year</option>
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+									<option value="2021">2021</option>
+								</select>
+								<span class="arrow"></span>
+							</dd><!--
+							--><dt class="top">
+								<label for="description">Description</label>
+							</dt><!--
+							--><dd>
+								<textarea name="description" id="description" placeholder="Description"></textarea>
+							</dd>
+							<input type="button" value="Save"><!--
+							--><input type="button" value="Mark as Complete">
+						</dl>
+					</fieldset>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

@@ -180,33 +180,28 @@ input[type="checkbox"]:checked ~ main {
 	}
 }
 
-/***Overlay ***/
+/*** Modal ***/
+
 
 .overlay {
 	display: none;
-	position: absolute;
+	z-index: 9999;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #000;
-	opacity: 0.3;
+	background-color: rgba(0,0,0,0.3);
 }
 
-/*** Modal ***/
-
 .details {
-	display: none;
+	position: relative;
 	box-sizing: border-box;
 	background-color: white;
 	width: 540px;
 	height: 375px;
 	padding: 30px;
-	z-index: 2;
-	position: absolute;
-	left: 50%;
-	margin-left: -270px;
-	top: 100px;
+	margin: 10% auto;
 }
 
 dt, dd, select, input, textarea {
